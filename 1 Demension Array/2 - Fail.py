@@ -10,10 +10,15 @@
 # 첫째 줄에 최댓값을 출력하고, 둘째 줄에 최댓값이 몇 번째 수인지를 출력한다.
 
 
-numList = []
+def maxValue():
+    inputList = []
+    for _ in range(9):
+        inputList.append(int(input()))
 
-for _ in range(9) :
-    inputNum = input('숫자 입력 : ')
-    numList.append(inputNum)
+    print(max(inputList))
+    print(inputList.index(max(inputList))+1)
+
+maxValue()
+
 
 
